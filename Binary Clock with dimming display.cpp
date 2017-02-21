@@ -6,10 +6,9 @@
 *   by 1 to give 0xD0
 *   This programme displays the HH:MM in BCD Binary
 *   on the 5x5 LED display
-*   The display will be blank for the first minute as seconds count up
 *   Due to using the DS3231 Pixnor Tiny RTC the time does not hold 
-*   when power is removed, a 3500mF cap on the 3v3 & Gnd lines allows of
-*   a 20 second backup.
+*   when power is removed, a 3500mF cap on the 3v3 & Gnd lines allows 
+*   for a 20 second backup.
 */
 
 #include "MicroBit.h"
@@ -20,6 +19,7 @@ MicroBit uBit;
 // set hours and minutes to the decimal value
 unsigned int hours = 19;
 unsigned int minutes = 57;
+
 unsigned int bcdHours = 0;;
 unsigned int bcdMinutes = 0;
 unsigned int returnValue = 0;
